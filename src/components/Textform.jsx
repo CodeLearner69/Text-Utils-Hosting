@@ -29,7 +29,7 @@ export default function Textform(props) {
                 <h1 className={` my-3 text-${props.mode === 'dark' ? 'light' : 'dark'}`}>Text Editor</h1>
                 <div className="mb-3">
                     <label htmlFor="exampleFormControlTextarea1" className={`form-label text-${props.mode === 'dark' ? 'light' : 'dark'}`}><h3>Enter text to enalyze</h3></label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" value={txt} onChange={handleOnChange} style={{backgroundColor:props.mode==='dark'?'#524a4a':'white',color:props.mode==='dark'?'white':'black'}} rows="6"></textarea>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" value={txt} onChange={handleOnChange} style={{backgroundColor:props.mode==='dark'?'rgb(72 72 72)':'white',color:props.mode==='dark'?'white':'black'}} rows="6"></textarea>
                 </div>
                 <button type="button" className="btn btn-primary m-2" onClick={handleUpperCase}>Convert to uppercase</button>
                 <button type="button" className="btn btn-primary m-2" onClick={handleLowerCase}>Convert to lowercase</button>
